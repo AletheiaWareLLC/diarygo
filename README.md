@@ -37,7 +37,7 @@ Diary Usage:
 
 ```
 go get fyne.io/fyne/v2/fyne
-fyne install aletheiaware.com/diarygo/cmd/diaryfyne
+fyne get aletheiaware.com/diarygo/cmd/diaryfyne
 ```
 
 ## Usage
