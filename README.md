@@ -5,26 +5,9 @@ diarygo
 
 Diary is a personal journal written in Go that stores entries in S P A C E.
 
-# GUI
+Diary provides two interfaces; a Command Line Interface, and a Graphical User Interface written with the [Fyne](https://fyne.io) toolkit.
 
-![Diary Locked GUI Screenshot](./img/gui-locked.png)
-
-![Diary Add GUI Screenshot](./img/gui-add.png)
-
-## Installation
-
-```
-go get fyne.io/fyne/v2/fyne
-fyne install aletheiaware.com/diarygo/cmd/diaryfyne
-```
-
-## Usage
-
-```
-diaryfyne
-```
-
-# CLI
+# Command Line
 
 ## Installation
 
@@ -42,4 +25,23 @@ Diary Usage:
     diary list - display all entries
     diary show - display latest entry
     diary show [id] - display entry with given id
+```
+
+# GUI
+
+![Diary Locked GUI Screenshot](./img/gui-locked.png)
+
+![Diary Add GUI Screenshot](./img/gui-add.png)
+
+## Installation
+
+```
+go get fyne.io/fyne/v2/fyne
+fyne install aletheiaware.com/diarygo/cmd/diaryfyne
+```
+
+## Usage
+
+```
+diaryfyne
 ```
