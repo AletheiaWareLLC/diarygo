@@ -1,0 +1,49 @@
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" width="480" height="640" viewBox="0 0 480 640">
+    <defs>
+        <g id="D">
+            <path d="M 180 120 A 96 64, 0, 1, 1, 180 200"/>
+            <line x1="200" y1="180" x2="200" y2="140" />
+        </g>
+    </defs>
+    <!-- Front Cover -->
+    <g fill="tan">
+        <rect x="40" y="20" width="400" height="600" rx="80" />
+    </g>
+    <!-- Binding -->
+    <g fill="black">
+        <rect x="40" y="20" width="80" height="600" />
+    </g>
+    <!-- D -->
+    <g fill="none" stroke="black" stroke-linecap="round" stroke-width="16">
+        <use xlink:href="#D"/>
+    </g>
+    <g fill="none" stroke="tan" stroke-linecap="round" stroke-width="1" stroke-dasharray="4">
+        <use xlink:href="#D"/>
+    </g>
+    <!-- Lock -->
+    <g fill="black">
+        <path d="M 442 280 L 360 280 C 320 290 320 350 360 360 L 442 360 Z" />
+    </g>
+    <!-- Receiver -->
+    <g fill="tan" stroke="black">
+        <rect x="370" y="270" width="48" height="100" />
+    </g>
+    <!-- Key Hole -->
+    <g fill="black">
+        <path d="M 390 320 A 8 8, 0, 1, 1, 398 320 L 402 335 L 386 335 Z" />
+    </g>
+    <!-- Stiches -->
+    <g stroke="tan">
+        <line x1="42" y1="22" x2="118" y2="22" stroke-dasharray="4" />
+        <line x1="118" y1="22" x2="118" y2="320" stroke-dasharray="4" />
+        <line x1="118" y1="320" x2="118" y2="618" stroke-dasharray="4" />
+        <line x1="42" y1="618" x2="118" y2="618" stroke-dasharray="4" />
+    </g>
+    <g stroke="black">
+        <line x1="372" y1="272" x2="416" y2="272" stroke-dasharray="4" />
+        <line x1="372" y1="274" x2="416" y2="274" stroke-dasharray="0 4 0" />
+        <line x1="372" y1="366" x2="416" y2="366" stroke-dasharray="0 4 0" />
+        <line x1="372" y1="368" x2="416" y2="368" stroke-dasharray="4" />
+    </g>
+</svg>
