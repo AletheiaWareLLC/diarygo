@@ -3,7 +3,7 @@
 diarygo
 =======
 
-Diary is a personal journal written in Go that stores entries in S P A C E.
+Diary is a personal journal written in Go that stores entries in [S P A C E](https://space.aletheiaware.com).
 
 Diary provides two interfaces; a Command Line Interface, and a Graphical User Interface written with the [Fyne](https://fyne.io) toolkit.
 
