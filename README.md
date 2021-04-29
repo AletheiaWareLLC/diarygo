@@ -12,7 +12,7 @@ Diary provides two interfaces; a Command Line Interface, and a Graphical User In
 ## Installation
 
 ```
-go get aletheiaware.com/diarygo/cmd/diary
+go get -tags release aletheiaware.com/diarygo/cmd/diary
 ```
 
 ## Usage
