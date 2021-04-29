@@ -36,7 +36,7 @@ func (diaryTheme) Color(c fyne.ThemeColorName, v fyne.ThemeVariant) color.Color 
 	case theme.ColorNamePressed:
 		return color.NRGBA{R: 0x0, G: 0x0, B: 0x0, A: 0x19}
 	case theme.ColorNamePrimary:
-		return color.NRGBA{R: 0xd2, G: 0xb4, B: 0x8c, A: 0xff}
+		return color.NRGBA{R: 0x80, G: 0x00, B: 0x00, A: 0xff}
 	case theme.ColorNameScrollBar:
 		return color.NRGBA{R: 0x0, G: 0x0, B: 0x0, A: 0x99}
 	case theme.ColorNameShadow:
@@ -47,18 +47,6 @@ func (diaryTheme) Color(c fyne.ThemeColorName, v fyne.ThemeVariant) color.Color 
 }
 
 func (diaryTheme) Font(s fyne.TextStyle) fyne.Resource {
-	if s.Monospace {
-		return theme.DefaultTheme().Font(s)
-	}
-	if s.Bold {
-		if s.Italic {
-			return theme.DefaultTheme().Font(s)
-		}
-		return theme.DefaultTheme().Font(s)
-	}
-	if s.Italic {
-		return theme.DefaultTheme().Font(s)
-	}
 	return theme.DefaultTheme().Font(s)
 }
 
@@ -67,24 +55,5 @@ func (diaryTheme) Icon(n fyne.ThemeIconName) fyne.Resource {
 }
 
 func (diaryTheme) Size(s fyne.ThemeSizeName) float32 {
-	switch s {
-	case theme.SizeNameCaptionText:
-		return 11
-	case theme.SizeNameInlineIcon:
-		return 20
-	case theme.SizeNamePadding:
-		return 4
-	case theme.SizeNameScrollBar:
-		return 16
-	case theme.SizeNameScrollBarSmall:
-		return 3
-	case theme.SizeNameSeparatorThickness:
-		return 1
-	case theme.SizeNameText:
-		return 14
-	case theme.SizeNameInputBorder:
-		return 2
-	default:
-		return theme.DefaultTheme().Size(s)
-	}
+	return theme.DefaultTheme().Size(s)
 }
