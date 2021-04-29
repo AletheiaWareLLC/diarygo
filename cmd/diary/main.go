@@ -81,12 +81,14 @@ func main() {
 }
 
 func list(d diarygo.Diary) {
-	for i := 0; i < d.Length(); i++ {
+	i := 0
+	for ; i < d.Length(); i++ {
 		id := d.ID(i)
 		timestamp := d.Timestamp(id)
 		meta := d.Meta(id)
 		log.Println(id, bcgo.TimestampToString(timestamp), meta)
 	}
+	log.Println(i, "Entries")
 }
 
 func show(c spaceclientgo.SpaceClient, n bcgo.Node, d diarygo.Diary, id string) error {
